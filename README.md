@@ -12,4 +12,8 @@ Used WebRTC for voice calls as that seemed like an easy implementation at the ti
 through their userID upon creating a new account. Video calls could also be applied using webRTC but that functionality
 wasn't implemented just yet.
 
-Discord servers weren't implemented due to the time requirement needed to make things work properly0
+Discord servers weren't implemented due to the time requirement needed to make things work properly.
+
+This was a school project worked on with a couple of other students over the course of a week and a half.
+
+Discontinued due to other students separating and/or working on their own individual projects.
