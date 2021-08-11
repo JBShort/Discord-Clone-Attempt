@@ -1,0 +1,368 @@
+.dm-main {
+    width: 240px;
+    height: 100vh;
+    background-color: #2F3136;
+    color: white;
+}
+
+.dm-searchBar {
+    height: 50px;
+    border-bottom: 1px solid rgb(36, 35, 35);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.dm-allUsers {
+    overflow: hidden scroll;
+    max-height: calc(100% - 102px);
+}
+
+.dm-allUsers::-webkit-scrollbar {
+    background-color: #2F3136;
+    width: 10px;
+}
+
+.dm-allUsers::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px #2F3136;
+    border: solid 3px transparent;
+    margin-top: 20px;
+}
+
+.dm-allUsers::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 34, 37);
+    border-radius: 7px;
+    width: 10px;
+    box-shadow: inset 0 0 10px 10px rgb(32, 34, 37);
+    border: solid 3px #2F3136;
+}
+
+.dm-newMsg {
+    display: flex;
+    padding: 18px 8px 4px 18px;
+    color: grey;
+    justify-content: space-between;
+    font-size: 12px;
+    font: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: default;
+}
+
+.dm-newMsgPlus {
+    cursor: pointer;
+}
+
+.dm-convo:hover {
+    color: white;
+}
+
+.dm-newMsg:hover svg, .dm-newMsg:hover h4 {
+    color: white;
+}
+
+.dm-friendsTab {
+    color: grey;
+    display: flex;
+    align-items: center;
+    padding: 9px 8px 9px 8px;
+    width: 100%;
+    margin: 9px 0 2px 8px;
+    border-radius: 5px;
+
+}
+
+.dm-friendsTab:hover {
+    background-color: #37383b;
+    cursor: pointer;
+    color: white;
+}
+
+
+.dm-convo {
+    color: grey;
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    width: 100%;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+
+.dm-convo:hover {
+    background-color: #37383b;
+    cursor: pointer;
+}
+
+.dm-user {
+    background-color: rgb(41,43,47);
+    display: flex;
+    height: 52px;
+    padding: 0 8px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.dm-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px ;
+    color: white;
+}
+
+.dm-userAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px ;
+}
+
+.dm-userCreds {
+    margin-right: 4px;
+    width: 84px;
+}
+
+.dm-userIcons {
+    width: 96px;
+    display: flex;
+}
+
+.dm-oneUserIcon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dm-oneUserIcon:hover {
+    background-color: rgb(58, 61, 66);
+}
+
+
+.dm-Search {
+    background-color: rgb(32, 34, 37);
+    color: rgb(111, 115, 122);
+    border: none;
+    border-radius: 4px;
+    height: 24px;
+    padding-left: 10px;
+    max-width: 90%;
+    cursor: pointer;
+}
+
+.strikethrough {
+    color: rgb(224, 50, 50);
+}
+
+.dm-close {
+    align-self: flex-end;
+    margin-right: 8px;
+}
+
+.dm-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75.6%;
+}
+
+.DMtooltip {
+    position: relative;
+    display: flex;
+}
+
+
+.DMtooltiptext {
+    justify-content: space-around;
+    font-size: small;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.DMtooltip:hover .DMtooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dm-convotooltipx {
+    visibility: hidden;
+    color: rgb(189, 189, 189);
+}
+
+.dm-convotooltip:hover .dm-convotooltipx {
+    visibility: visible;
+}
+
+.dm-convotooltipx:hover {
+    color:white;
+}
+
+.dm-userName {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dm-userID {
+    font-size: 11px;
+    color: rgb(181, 183, 186);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dm-bottomIcons {
+    color: rgb(181, 183, 186);
+    font-family: 'Roboto', sans-serif;
+}
+
+.dm-mute {
+    color: red;
+}
+
+.dm-unmute {
+    color: rgb(181, 183, 186);
+}
+
+.FindDM-main {
+    height: 400px;
+    width: 440px;
+    background-color: #36393F;
+    position: absolute;
+    left: 280px;
+    top: 140px;
+    border-radius: 5px;
+    border:rgb(36, 35, 35) 1px solid;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.FindDM-main h2, .FindDM-main p, .FindDM-input  {
+    margin: 0 20px;
+}
+
+.FindDM-input {
+    width: 380px;
+    height: 32px;
+    margin: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #202225;
+    border: none;
+    color: white;
+}
+
+.FindDM-submit {
+    height: 40px;
+    width: 400px;
+    padding: 2px 16px;
+    background-color: #5a66e2;
+    color: white;
+    border:rgb(36, 35, 35) 1px solid;
+    border-radius: 5px;
+}
+
+.FindDM-main h2 {
+    color: white;
+    margin-top: 16px;
+}
+
+
+
+.FindDM-submit:hover {
+    background-color: #4752c4;
+    cursor: pointer;
+}
+
+
+.FindDM-form {
+    height: inherit;
+}
+
+.FindDM-btn {
+    display: flex;
+    justify-content: center;
+    padding: 16px; 
+}
+
+.FindDM-oneOption {
+    height: 28px;
+    width: 400px;
+    padding: 6px 8px;
+    margin-left: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.FindDM-oneOption:hover {
+    background-color: rgb(58, 61, 66);
+    cursor: pointer;
+}
+
+.FindDM-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.FindDM-usersContainer {
+    height: 190px;
+    width: 440px;
+    overflow: auto;
+    max-height: calc(100% - 102px);
+}
+
+.FindDM-usersContainer::-webkit-scrollbar {
+    background-color: #2F3136;
+    width: 5px;
+}
+
+.FindDM-usersContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px #2F3136;
+    border: solid 3px transparent;
+    margin-top: 20px;
+}
+
+.FindDM-usersContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 34, 37);
+    border-radius: 7px;
+    width: 10px;
+    box-shadow: inset 0 0 10px 10px rgb(32, 34, 37);
+    border: solid 3px #2F3136;
+}
+
+.newMessageIndicator {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 0, 0, 0.63);
+    z-index: 999;
+    border-radius: 50%;
+    display: flex;
+    margin: 5px 10px 0 0;
+    position: absolute;
+    left: 200px
+}

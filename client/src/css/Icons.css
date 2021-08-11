@@ -1,0 +1,54 @@
+.icons-main {
+    width: 72px;
+    height: 100vh;
+    background-color: #202225;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.icons-buttons {
+    width: 52px;
+    height: 50px;
+    margin: 10px 8px;
+    border-radius: 100%;
+    border: none;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+    transition: border-radius 0.1s linear;
+    cursor: pointer;
+}
+
+.icons-buttons:hover { 
+    border-radius: 25%; 
+    background-color: rgb(58, 160, 58);
+    color: white
+};
+
+.home-separator {
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.icons-home {
+    border-radius: 30%; 
+    background: #5865F2;
+    width: 52px;
+    height: 50px;
+    margin: 10px 8px;
+    color: white;
+    transition: border-radius 0.1s linear;
+    cursor: pointer;
+}
+
+.green {
+    color: darkgreen;
+    background: rgb(54,57,63);
+    font-size: larger;
+}
+
+.loginPage{
+    display: flex;
+    justify-content: space-between;
+}
